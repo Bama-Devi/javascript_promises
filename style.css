@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Belanosima&family=Courgette&family=Crimson+Pro:ital,wght@0,600;1,200&family=Kanit:ital,wght@1,300&family=Noto+Serif:ital,wght@1,300;1,400&family=Roboto&family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Belanosima&family=Courgette&family=Crimson+Pro:ital,wght@0,600;1,200&family=Kanit:ital,wght@1,300&family=Mooli&family=Noto+Serif:ital,wght@1,300;1,400&family=Roboto&family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+header{
+    background-color: #575355;
+    width: 100%;
+
+}
+.logo{
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo h1{
+    text-transform: uppercase;
+    color: #dbe7e7;
+    width: 50%;
+    font-size: 50px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: 'Courgette', cursive;
+}
+.logo img{
+    width: 180px;
+margin-right: 450px;
+}
+body{
+    background-color: #e1d5dd;
+}
+main{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #575355; */
+}
+form{
+
+    width:900px;
+    height: 520px;
+    background-color: #fcf4ff;
+    padding:30px 50px;
+    box-shadow: 1px 2px 3px #966e82;
+    margin-top:55px;
+    border-radius: 12px;
+    font-family: 'Mooli', sans-serif;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+h2, h3 {
+    color: #353434;
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+
+input[type="radio"] {
+    margin-right:15px;
+margin-top:8px;
+}
+
+input[type="checkbox"] {
+    margin-right:10px;
+    margin-top:8px;
+}
+select{
+    margin-top:8px;
+    font-family: 'Mooli', sans-serif;
+    font-size: 16px;
+}
+#submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin:25px;
+    cursor: pointer;
+}
+@media(max-width:576px){
+    .logo h2{
+    
+        font-size:30px;
+        margin-left: 120px;
+    }
+    .logo img{
+        width: 90px;
+    margin-right:170px;
+    }
+    form{
+        height: 500px;
+        padding:15px 25px;
+        margin:40px;
+        font-size: 14px;
+    }
+    
+    
+
+}

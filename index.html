@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-cream Shopping</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>scoop</h1>
+            <img src="./images/scoop-22_4x.jpg" alt="logo-image">
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="orderContainer">
+                <h2 id="available">is shop available?</h2>
+
+                <input type="radio" id="shop_open" value="open" name="availability">
+                <label for="shop_open">open</label>
+                <input type="radio" id="shop_closed" value="closed" name="availability">
+                <label for="shop_closed">closed</label>
+
+                <!-- <h5 id="start"></h5> -->
+                <h2>select a holder</h2>
+
+                <input type="radio" id="cup_holder" value="cup" name="holder">
+                <label for="cup_holder">cup</label>
+                <input type="radio" id="cone_holder" value="cone" name="holder">
+                <label for="cone_holder">cone</label>
+                <input type="radio" id="stick_holder" value="stick" name="holder">
+                <label for="stick_holder">stick</label>
+
+                <h2>Pick a flavour</h2>
+                <select name="flavour" id="flavour">
+                    <option value="">select flavour</option>
+                    <option value="vanilla">vanilla</option>
+                    <option value="chocolate">chocolate</option>
+                    <option value="strawberry">strawberry</option>
+                    <option value="butterscotch">butterscotch</option>
+                    <option value="blackcurrant">blackcurrant</option>
+                </select>
+
+                <h2>Pick a fruit</h2>
+                <select name="fruit" id="fruit">
+                    <option value="">select fruit</option>
+                    <option value="strawberry">strawberry</option>
+                    <option value="grapes">grapes</option>
+                    <option value="banana">banana</option>
+                </select>
+
+                <h2>Pick a syrup</h2>
+                <input type="radio" id="chocolate_syrup" value="chocolate" name="syrup">
+                <label for="chocolate_syrup">chocolate</label>
+                <input type="radio" id="caramel_syrup" value="caramel" name="syrup">
+                <label for="caramel_syrup">caramel</label>
+                <input type="radio" id="fruit_syrup" value="fruit" name="syrup">
+                <label for="fruit_syrup">fruit</label>
+
+                <h2>Pick a toppings</h2>
+                <input type="checkbox" id="candy_toppings" value="candy" name="toppings[]">
+                <label for="candy_toppings">candy</label>
+                <input type="checkbox" id="whippedCream_toppings" value="whippedCream" name="toppings[]">
+                <label for="whippedCream_toppings">whippedCream</label>
+                <input type="checkbox" id="sprinkles_toppings" value="sprinkles" name="toppings[]">
+                <label for="sprinkles_toppings">sprinkles</label>
+                <input type="checkbox" id="dryFruits&Nuts_toppings" value="dryFruits&Nuts" name="toppings[]">
+                <label for="dryFruits&Nuts_toppings">dryFruits&Nuts</label>
+
+            </div>
+            <button type="button" id="submit" onclick="productionStart()">Submit</button>
+            <div class="commentContainer">
+                <h1 class="msg"></h1>
+                <h3 class="production"></h3>
+                <h2 class="greet"></h2>
+            </div>
+
+
+
+
+        </form>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
